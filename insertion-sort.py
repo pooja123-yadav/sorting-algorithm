@@ -6,6 +6,9 @@
 # precede it. If the key is smaller than an element in the sorted portion, the function shifts that element to the right,
 # creating space for the key. This process continues until the correct position for the key is found, and it is then inserted in 
 # that position.
+# Time Complexity: O(N2) 
+# Auxiliary Space: O(1)
+
 
 def insertion_sort(arr):
     n = len(arr)
