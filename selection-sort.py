@@ -2,28 +2,27 @@
 
 # Select minimum and swap
 
-# Python program for implementation of Insertion Sort
+# Python program for implementation of Selection Sort
 
-# Function to do insertion sort
-def insertionSort(arr):
+# Function to do Selection sort
+def selection_sort(arr):
     n = len(arr)
-    # Traverse through 1 to len(arr)
-    for i in range(0, n-1):
-        min = i
-        for j in range(i+1,n):
-            if arr[j]<arr[min]:
-                min = j
-        # Move these lines outside the inner loop
-        temp = arr[min]
-        arr[min] = arr[i]
-        arr[i] = temp         
-	            
 
+    for i in range(n - 1):
+        min_index = i
 
-# Driver code to test above
-arr = [12, 11, 13, 5, 6]
-insertionSort(arr)
-print(arr)
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
 
-# This code is contributed by Mohit Kumra
+        # Swap the found minimum element with the first element
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+    return arr
+
+# Example usage
+array_to_sort = [49, 25, 19, 27, 87, 67, 22, 90, 47, 91]
+result = selection_sort(array_to_sort)
+print(result)
+
 
