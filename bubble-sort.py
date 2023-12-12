@@ -8,10 +8,9 @@
 # 3. This process is then continued to find the second largest and place it and so on until the data is sorted.
 
 # Total no. of passes: n-1
-# Total no. of comparisons: n*(n-1)/2
+# Total no. of comparisons: n*(n-1)/2 (n,n-1,n-2,n-3..................1 = n*(n-1)/2)
 
 # Note:  It can be optimized by stopping the algorithm if the inner loop didn’t cause any swap. 
-
 
 
 def bubbleSort(arr):
