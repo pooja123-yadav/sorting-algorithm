@@ -2,6 +2,12 @@
 
 # Select minimum and swap
 
+# The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part 
+# and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+
+# In each iteration, the code finds the minimum element’s index in the unsorted portion of the array 
+# and swaps it with the current index’s element. 
+
 # Python program for implementation of Selection Sort
 
 # Function to do Selection sort
